@@ -146,9 +146,17 @@ body {
 /*не ставила background colour, закоментувала колір тексту*/
 .hero {
     background-color: var(--hero-background);
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+        url(../img/people-office-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     padding-top: 188px;
     padding-bottom: 188px;
 }
+
+
 .hero-name {
     font-size: 56px;
     line-height: 1.07;
@@ -191,6 +199,17 @@ body {
 .about-us-menu-item {
     width: 264px;
 }
+
+.about-us-item-icon {
+    display: flex;
+    width: 264px;
+    height: 112px;
+    border-radius: 4px;
+    background-color: var(--light-background);
+    padding: 24px 100px;
+    margin-bottom: 8px;
+}
+
 /*====OUR TEAM=====*/
 
 .our-team-section {
@@ -205,6 +224,7 @@ body {
     letter-spacing: 0.02em;
     color:var(--dark-theme);
     margin-bottom: 8px;
+
 }
 
 /*===SERVICES SECTION====*/
@@ -242,6 +262,15 @@ body {
     padding-bottom: 32px;
 }
 
+.social-link {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background-color: var(--brand-color);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
 
 .title {
     font-weight: 700;
