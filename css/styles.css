@@ -206,8 +206,9 @@ body {
     height: 112px;
     border-radius: 4px;
     background-color: var(--light-background);
-    padding: 24px 100px;
     margin-bottom: 8px;
+    justify-content: center;
+    align-items: center;
 }
 
 /*====OUR TEAM=====*/
@@ -262,14 +263,25 @@ body {
     padding-bottom: 32px;
 }
 
+.social-links-list {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+
 .social-link {
     display: flex;
-    width: 40px;
-    height: 40px;
+    width: 44px;
+    height: 44px;
     background-color: var(--brand-color);
     border-radius: 50%;
     justify-content: center;
     align-items: center;
+}
+
+.social-link-icon {
+    fill: var(--standart-white);
 }
 
 .title {
@@ -295,7 +307,6 @@ body {
     background-color: var(--dark-theme);
     padding:100px 0;
     
-   
 }
 
 .footer-text {
