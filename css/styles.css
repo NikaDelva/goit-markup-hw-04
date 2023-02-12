@@ -48,6 +48,7 @@ body {
   list-style: none;
 }
 
+
 /*=======CONTAINER=====*/
 
 .container {
@@ -148,6 +149,8 @@ body {
   background-repeat: no-repeat;
   padding-top: 188px;
   padding-bottom: 188px;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .hero-name {
@@ -257,7 +260,7 @@ body {
 .social-links-list {
   display: flex;
   justify-content: center;
-  gap: 8px;
+  gap: 24px;
   margin-top: 10px;
 }
 
@@ -299,14 +302,17 @@ body {
 
 /*==CUSTOMERS==*/
 
+.customers-section {
+  padding-top: 130px;
+  padding-bottom: 120px;
+}
+
 .customers-menu {
   display: flex;
-  flex-wrap: wrap;
 }
 
 .customers-menu-item {
   display: flex;
-  flex-wrap: wrap;
 }
 
 .customers-menu-item:not(:last-child) {
@@ -324,8 +330,8 @@ body {
   align-items: center;
 }
 
-.customers-menu-link:hover,
-.customers-menu-link:focus {
+.customers-menu .customers-menu-link:hover,
+.customers-menu .customers-menu-link:focus {
   border-color: var(--pressed-state);
 }
 
@@ -333,22 +339,25 @@ body {
   fill: var(--suble-text);
 }
 
-.customers-icon:hover,
-.customers-icon:focus {
+.customers-menu-link:hover .customers-icon,
+.customers-menu-link:focus .customers-icon {
   fill: var(--pressed-state);
 }
+
 
 /*===FOOTER===*/
 
 .footer {
   background-color: var(--dark-theme);
   padding: 100px 0;
-  display: flex;
 }
 
 .footer-container {
   display: flex;
-  gap: 120px;
+}
+
+.footer-description {
+  margin-right: 120px;
 }
 
 .footer-text {
@@ -359,15 +368,15 @@ body {
   margin-top: 16px;
 }
 
-.footer-social-media-menu {
+.footer-social {
   display: flex;
 }
 
-.footer-social-media-item:not(:last-child) {
+.footer-item:not(:last-child) {
   margin-right: 16px;
 }
 
-.footer-social-title {
+.footer-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -376,7 +385,7 @@ body {
   margin-bottom: 16px;
 }
 
-.footer-social-media-link {
+.footer-link {
   display: flex;
   width: 40px;
   height: 40px;
@@ -386,8 +395,8 @@ body {
   align-items: center;
 }
 
-.footer-social-media-link:hover,
-.footer-social-media-link:focus {
+.footer-link:hover,
+.footer-link:focus {
   background-color: var(--success-theme);
 }
 /*
@@ -454,8 +463,6 @@ body {
 
 .portfolio-card-text:hover,
 .portfolio-card-text:focus {
-  cursor: pointer;
-  border: 0.5px solid var(--light-background);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
