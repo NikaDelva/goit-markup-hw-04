@@ -115,7 +115,7 @@ body {
 
 .navigation-menu-link:hover,
 .navigation-menu-link:focus {
-  color: var(--brand-color);
+  color: var(--pressed-state);
 }
 
 .address-menu {
