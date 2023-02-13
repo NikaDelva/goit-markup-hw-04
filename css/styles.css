@@ -261,7 +261,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 24px;
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 .social-link {
@@ -333,6 +333,7 @@ body {
 .customers-menu .customers-menu-link:hover,
 .customers-menu .customers-menu-link:focus {
   border-color: var(--pressed-state);
+  outline: none;
 }
 
 .customers-icon {
@@ -378,7 +379,6 @@ body {
 
 .footer-title {
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--standart-white);
